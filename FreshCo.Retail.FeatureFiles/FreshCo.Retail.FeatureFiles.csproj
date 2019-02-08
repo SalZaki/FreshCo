@@ -82,15 +82,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CheckoutContext.cs" />
+    <Compile Include="Helper\CheckoutContext.cs" />
     <Compile Include="Features\Checkout.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Checkout.feature</DependentUpon>
     </Compile>
+    <Compile Include="Helper\OrderTotal.cs" />
+    <Compile Include="Helper\ScanProduct.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Steps\BaseScanProductsStep.cs" />
-    <Compile Include="Steps\ScanProductsSteps.cs" />
+    <Compile Include="Steps\BaseCheckoutSteps.cs" />
+    <Compile Include="Steps\CheckoutSteps.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

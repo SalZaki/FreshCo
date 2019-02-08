@@ -12,11 +12,11 @@
     using Domain.Entities;
 
     [Binding]
-    public class BaseScanProductsStep : Steps
+    public class BaseCheckoutSteps : Steps
     {
         private readonly CheckoutContext _checkoutContext;
 
-        public BaseScanProductsStep(CheckoutContext checkoutContext)
+        public BaseCheckoutSteps(CheckoutContext checkoutContext)
         {
             _checkoutContext = checkoutContext;
         }

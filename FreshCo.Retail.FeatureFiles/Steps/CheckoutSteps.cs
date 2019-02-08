@@ -2,33 +2,17 @@
 {
     using TechTalk.SpecFlow;
     using TechTalk.SpecFlow.Assist;
-    using FreshCo.Retail.Domain.Entities;
+    using Domain.Entities;
     using System.Linq;
     using FluentAssertions;
-    using System;
-
-    public class ScanProduct
-    {
-        public Guid Id { get; set; }
-        public string Name { get; set; }
-        public string Sku { get; set; }
-        public decimal Price { get; set; }
-        public int Quantity { get; set; }
-        public decimal Total { get; set; }
-    }
-
-    public class OrderTotal
-    {
-        public int Quantity { get; set; }
-        public decimal Total { get; set; }
-    }
+    using Helper;
 
     [Binding]
-    public class ScanProductsSteps : Steps
+    public class CheckoutSteps : Steps
     {
         private readonly CheckoutContext _checkoutContext;
 
-        public ScanProductsSteps(CheckoutContext checkoutContext)
+        public CheckoutSteps(CheckoutContext checkoutContext)
         {
             _checkoutContext = checkoutContext;
         }
