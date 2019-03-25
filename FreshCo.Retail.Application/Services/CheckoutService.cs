@@ -50,20 +50,20 @@
 
         public void ApplyDiscount()
         {
-            if (_products.Any())
+            if (Products.Any())
             {
                 try
                 {
-                    var discounts = _products
+                    var discounts = Products
                         .Distinct()
                         .Select(x => _discountService.GetDiscountBySku(x.Sku))
                         .ToList();
 
                     if (discounts.Any())
                     {
-                        foreach (Discount discount in discounts)
+                        foreach (var discount in discounts)
                         {
-                            var q = _products.Where(p => p.Sku == discount.Sku).Count();
+                            var q = Products.Where(p => p.Sku == discount.Sku).Count();
                             if (q >= discount.Quantity)
                             {
                                 Total -= discount.Value;
@@ -79,7 +79,6 @@
                 {
                     throw ex;
                 }
-
             }
         }
     }

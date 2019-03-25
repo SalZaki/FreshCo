@@ -4,3 +4,10 @@ This is base line for FreshCo retail checkout kata. Please note following,
 - BDD are done upfront for the checkout service
 - Kept them simple
 - Only covering happy paths at the moment i.e. there are no false scenarios covered
+
+
+# Solution
+
+Solution|Author(s)
+--------|---------
+Unity | Sal Zaki (@salzaki)

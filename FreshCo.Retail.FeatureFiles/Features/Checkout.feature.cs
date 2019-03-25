@@ -32,8 +32,8 @@ namespace FreshCo.Retail.FeatureFiles.Features
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
             TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Checkout", "\tAs a Supermarket checkout controller in FreshCo Retail fulfilment team,\r\n\tI want" +
-                    " the ability to scan valid product(s), check their quantity and total,\r\n\tso that" +
-                    " I can fulfill customer order(s)", ProgrammingLanguage.CSharp, ((string[])(null)));
+                    " the ability to scan valid product(s), apply discount(s), check their\r\n\tquantity" +
+                    " and total, so that I can fulfill customers order(s)", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         

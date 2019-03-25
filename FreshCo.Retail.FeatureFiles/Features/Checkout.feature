@@ -13,8 +13,8 @@
 
 Feature: Checkout
 	As a Supermarket checkout controller in FreshCo Retail fulfilment team,
-	I want the ability to scan valid product(s), check their quantity and total,
-	so that I can fulfill customer order(s)
+	I want the ability to scan valid product(s), apply discount(s), check their
+	quantity and total, so that I can fulfill customers order(s)
 
 @functional
 Scenario: Configure check out service with porudtcs and discounts of scheme one and scanning a product
